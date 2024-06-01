@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="styles2.css">
+
+</head>
+<body>
+    
+    <section class="container">
+        <header>Regístrate</header>
+
+        <form action="php/inicio.php" method="post" class="form">
+            
+
+                <div class="input-box">
+                    <label></label>
+                    <input type="Int" placeholder="cedula empleado" required name="cedula" id="cedula">
+                </div>
+
+                <div class="input-box">
+                    <label></label>
+                <input type="text" placeholder="Nombre " name="nombre" required id="nombre">
+            </div>
+<br>
+            <div class="input-box">
+                <label></label>
+                <input type="text" placeholder="Apellidos"  name="apellidos" id="apellidos">
+            </div>
+<br>
+            <div class="input-box">
+                <label></label>
+                <input type="email" placeholder=" Correo"  name="correo" id="correo">
+            </div>
+
+            <br>
+
+            <div class="input-box">
+                <label></label>
+                <input type="password" placeholder=" Contraseña Nueva"  name="password" id="password">
+            </div>
+
+            <br>
+
+            <div class="input-box">
+                <label></label>
+                <input type="password" placeholder=" Ingresa nuevamente la contraseña"  name="password" id="password">
+            </div>
+
+            <br>
+           
+<br>
+<div class="input-box">
+    <label></label>
+    <input type="Int" placeholder="Telefono" required name="telefono" id="telefono">
+</div>
+
+            <div class="input-box">
+                <label><center>Rol</center></label>
+                
+                <select id="opciones"  name="opciones" required>
+                    <option value=""></option>
+                    <option value="almacen">Almacen</option>
+                    <option value="facturacion">Facturacion</option>
+                </select>
+                
+            </div>
+
+          
+                
+                    
+                   
+            </div>
+<br>
+
+<br>
+            
+
+               
+            
+
+                
+                 
+            
+
+<br>
+
+            <br>
+            
+           
+<center><button>Enviar</button></center> 
+        </form>
+    </section>
+</body>
+</html>

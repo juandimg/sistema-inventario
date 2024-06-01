@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="../almacen/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="../img/inicio.png" alt="Logo" class="navbar-logo">
+        <h1 class="navbar-title"> Productos</h1> 
+    </nav>
+    <form id="dataForm" method="POST" action="../almacen/inicio.php">
+        <input type="date" id="col1" name="fecha_ingreso" placeholder="Fecha de Ingreso" required>
+        <input type="text" id="col2" name="referencia" placeholder="Referencia" required>
+        <input type="text" id="col3" name="producto" placeholder="Producto" required>
+        <input type="text" id="col4" name="proveedor" placeholder="Proveedor" required>
+        <input type="number" id="col5" name="cantidad" placeholder="Cantidad" required>
+        <input type="text" id="col6" name="unidad_medida" placeholder="Unidad de Medida" required>
+        <input type="number" id="col7" name="valor" placeholder="Valor" required>
+        <button type="button" onclick="addRow()">Agregar Producto</button> 
+    </form>
+
+    <table id="dynamicTable">
+        <thead>
+            <tr>
+                <th>Fecha de Ingreso</th>
+                <th>Referencia</th>
+                <th>Producto</th>
+                <th>Proveedor</th>
+                <th>Cantidad</th>
+                <th>Unidad de Medida</th>
+                <th>Valor</th>
+                <th>Total</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Las filas se agregarán aquí dinámicamente -->
+        </tbody>
+    </table>
+
+    <div id="pagination">
+        <button onclick="prevPage()">Anterior</button>
+        <span>Página: <span id="pageNumber">1</span></span>
+        <button onclick="nextPage()">Siguiente</button>
+    </div>
+
+    <script src="productos.js"></script>
+</body>
+</html>

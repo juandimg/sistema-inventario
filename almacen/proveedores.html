@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proveedores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="../img/inicio.png" alt="Logo" class="navbar-logo">
+        <h1 class="navbar-title">Proveedores</h1> 
+    </nav>
+
+    <form id="proveedorForm">
+        <input type="text" id="codigo" name="codigo" placeholder="Codigo" required>
+        <input type="text" id="nombreproveedor" name="nombreproveedor" placeholder="Nombre Proveedor" required>
+        <input type="email" id="correoproveedor" name="correoproveedor" placeholder="Correo" required>
+        <input type="number" id="telefonoproveedor" name="telefonoproveedor" placeholder="Telefono" required>
+        <input type="text" id="direccionproveedor" name="direccionproveedor" placeholder="Direccion" required>
+        <button type="button" onclick="addRow()">Nuevo Proveedor 🤝</button> 
+    </form>
+
+    <table id="proveedoresTable" >
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Nombre Proveedor</th>
+                <th>Correo</th>
+                <th>Telefono</th>
+                <th>Direccion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Filas de proveedores se añadirán aquí -->
+        </tbody>
+    </table>
+
+    <script src="proveedor.js"></script>
+</body>
+</html>

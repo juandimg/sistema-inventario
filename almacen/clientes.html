@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="../img/inicio.png" alt="Logo" class="navbar-logo">
+        <h1 class="navbar-title">Nuestros clientes</h1>
+    </nav>
+
+    <form id="clientForm">
+        <input type="text" id="codigo" name="codigo" placeholder="Codigo" required>
+        <input type="text" id="nombrecliente" name="nombrecliente" placeholder="Nombre Cliente" required>
+        <input type="email" id="correocliente" name="correocliente" placeholder="Correo" required>
+        <input type="number" id="telefonocliente" name="telefonocliente" placeholder="Telefono" required>
+        <input type="text" id="direccioncliente" name="direccioncliente" placeholder="Direccion" required>
+        <button type="submit">Nuevo Cliente😎</button>
+    </form>
+
+    <table id="clientTable">
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Nombre Cliente</th>
+                <th>Correo</th>
+                <th>Telefono</th>
+                <th>Direccion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- New rows will be added here -->
+        </tbody>
+    </table>
+
+    <script src="clientes.js"></script>
+</body>
+</html>
